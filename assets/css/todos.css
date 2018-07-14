@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
+body {
+    font-family: Roboto;
+    background: #74ebd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 h1 {
     background: #2980b9;
     color: white;
@@ -10,32 +18,16 @@ h1 {
     font-weight: normal;
 }
 
-.fa-plus {
-    float: right;
-}
-
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: Roboto;
-    background: #74ebd5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
 li {
     background: #fff;
     height: 40px;
     line-height: 40px;
-}
-
-li:nth-child(2n) {
-    background: #f7f7f7;
 }
 
 span {
@@ -48,11 +40,6 @@ span {
     display: inline-block;
     transition: 0.2s linear;
     opacity: 0;
-}
-
-li:hover span {
-    width: 40px;
-    opacity: 1.0;
 }
 
 input {
@@ -73,14 +60,27 @@ input:focus {
     outline: none;
 }
 
-#container {
-    width: 360px;
-    margin: 100px auto;
+li:nth-child(2n) {
     background: #f7f7f7;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1.0;
 }
 
 .completed {
     color: gray;
     text-decoration: line-through;
+}
+
+.fa-plus {
+    float: right;
+}
+
+#container {
+    width: 360px;
+    margin: 100px auto;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
